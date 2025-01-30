@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+      integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <title>Roope Astrén</title>
+  </head>
+  <body>
+    <main>
+      <div id="profile-picture" class="flex justify-center">
+        <img
+          src="img/Profiilikuva.jpeg"
+          class="rounded-full h-50 w-50 md:h-100 md:w-100 lg:h-125 lg:w-125 md:m-0"
+          alt="Profiilikuva"
+        />
+      </div>
+      <div id="person-info">
+        <h1 id="name" class="text-3xl lg:text-5xl font-bold">Roope Astrén</h1>
+        <div>
+          <ul
+            id="skills"
+            class="flex text-xl flex-col lg:flex-row gap-2 lg:gap-5 justify-center lg:text-2xl"
+          >
+            <span id="typed"></span>
+          </ul>
+        </div>
+      </div>
+      <div id="download-cv">
+        <a
+          href="files/CV_FI_2024_Roope_Astrén.pdf"
+          class="rounded-xl border-3 text-xl lg:text-3xl font-bold"
+        >
+          Download CV
+        </a>
+      </div>
+      <div id="summary">
+        <p class="lg:text-xl">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit ipsam
+          quaerat placeat delectus alias explicabo eveniet at corrupti harum qui
+          dolorem maiores ducimus vel beatae vero officia sit ipsa, voluptatem
+          iusto rerum odio suscipit quam non! Blanditiis quam minus, eaque
+          tempore animi soluta sapiente exercitationem adipisci facilis
+          cupiditate veritatis non.
+        </p>
+      </div>
+      <div id="move">
+        <a href="html/hub.html"
+        class = "rounded-xl border-3 text-xl lg:text-3xl font-bold"
+        >
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+    </main>
+    <footer
+      id="contact"
+      class="flex flex-col gap-5 lg:flex-row lg:gap-15 justify-center"
+    >
+      <div id="links" class="flex flex-row gap-5 justify-center">
+        <div>
+          <a
+            href="https://www.linkedin.com/in/roope-astren/"
+            target="_blank"
+            class="text-5xl"
+          >
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+        </div>
+        <div>
+          <a
+            href="https://github.com/astroxamk"
+            target="_blank"
+            class="text-5xl"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </div>
+        <div>
+          <a
+            href="https://www.instagram.com/rhj.astren/"
+            target="_blank"
+            class="text-5xl"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+      <div class="lg:text-xl">
+        <ul>
+          <li>Location: Kotka, Finland</li>
+          <li>Education: XAMK</li>
+          <li>E-mail: roope.astren@gmail.com</li>
+        </ul>
+      </div>
+      <div class="lg:text-xl">&copy Roope Astrén</div>
+    </footer>
+  </body>
+</html>
+
+<script>
+  var typed = new Typed("#typed", {
+    strings: [
+      '<li>Python</li>', 
+      '<li>C++</li>',
+      '<li>Web Development</li>',
+      '<li>Game Development</li>',
+    ],
+    typeSpeed: 50,
+    showCursor: false,
+    loop: true,
+  });
+</script>
+
+<style>
+  #profile-picture {
+    margin-top: 3rem;
+  }
+
+  #person-info {
+    margin: 1.5rem 0;
+  }
+
+  #skills {
+    margin: 1.5rem 0;
+  }
+
+  #typed{
+    display: inline-block;
+    min-height: 30px;
+  }
+
+  #download-cv {
+    margin: 1.5rem 0;
+  }
+
+  #download-cv a {
+    padding: 0.5rem 5rem;
+    background-color: var(--color-link);
+  }
+
+  #summary {
+    margin: 2rem 15vw 3rem 15vw;
+  }
+</style>
