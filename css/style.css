@@ -6,10 +6,10 @@
 
 :root {
   --color-bg: #eaa8d1;
-  --color-accent: #843b62;
-  --color-bg-alt: #f74ba6;
+  --color-bg-alt: #8f5172;
   --color-bg-alt-2: #d1619d;
   --color-text: #0c0f0a;
+  --color-text-white: #fff;
   --color-link: #56cbf9;
   --color-link-alt: #00ffcd;
 }
@@ -20,8 +20,12 @@ body {
   display: flex;
   justify-content: center;
   color: var(--color-text);
-  min-height: 100vh;
+  min-height: 85vh;
   flex-direction: column;
+}
+
+main{
+  margin: 2rem 15vw 3rem 15vw;
 }
 
 footer {
@@ -33,3 +37,54 @@ footer {
   padding: 1rem 1.5rem;
   background-color: var(--color-link-alt);
 }
+
+#simple-info{
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+#img-container {
+  margin: 1rem 1rem;
+}
+
+#simple-info #list{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+#report{
+  margin-bottom: 3rem;
+}
+
+#report h2{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+#paragraph{
+  margin: 1.5rem 0;
+}
+
+@media screen and (min-width: 1200px){
+  main{
+    margin: 2rem 25vw 3rem 25vw;
+  }
+
+  #simple-info{
+    grid-template-columns: 1fr 1fr;
+    margin: 0rem -15vw;
+  }
+
+  #img-container{
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 420px){
+  main{
+    margin: 2rem 3vw 3rem 3vw;
+  }
+}
+
