@@ -16,6 +16,7 @@
 
 body {
   text-align: center;
+  background-image: url("../img/bg_image.png");
   background-color: var(--color-bg);
   display: flex;
   justify-content: center;
@@ -28,9 +29,24 @@ main{
   margin: 2rem 15vw 3rem 15vw;
 }
 
+h1{
+  background: url("../img/Text_bg_img.jpg");
+  background-clip: text;
+  color: transparent;
+}
+
+#summary{
+  backdrop-filter: blur(10px);
+}
+
 footer {
   bottom: 0;
   margin: 2rem 6rem;
+}
+
+#personal-summary{
+  backdrop-filter: blur(10px);
+  font-size: 1.2rem;
 }
 
 #move a{
@@ -45,6 +61,7 @@ footer {
 
 #img-container {
   margin: 1rem 1rem;
+  backdrop-filter: blur(10px);
 }
 
 #simple-info #list{
@@ -52,19 +69,38 @@ footer {
   align-items: center;
   justify-content: center;
   padding: 1rem;
+  backdrop-filter: blur(10px);
+}
+
+h2{
+  background: url("../img/Text_bg_img.jpg");
+  background-clip: text;
+  color: transparent;
+  font-size: 1.75rem;
+  font-weight: bold;
+  margin: 1rem 0;
 }
 
 #report{
   margin-bottom: 3rem;
 }
 
-#report h2{
+#report h3{
   font-size: 1.5rem;
   font-weight: bold;
 }
 
 #paragraph{
   margin: 1.5rem 0;
+  backdrop-filter: blur(10px);
+}
+
+#project-images{
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
 }
 
 @media screen and (min-width: 1200px){
@@ -77,14 +113,37 @@ footer {
     margin: 0rem -15vw;
   }
 
+  #personal-summary{
+    font-size: 1.2rem;
+  }
+
   #img-container{
     max-width: 100%;
+  }
+
+  #project-images{
+    grid-template-columns: 1fr 1fr;
+    margin: 0rem -10vw;
+  }
+}
+
+@media screen and (min-width: 1921px){
+  main{
+    margin: 2rem 30vw 3rem 30vw;
   }
 }
 
 @media screen and (max-width: 420px){
   main{
     margin: 2rem 3vw 3rem 3vw;
+  }
+
+  #personal-summary{
+    font-size: 1rem;
+  }
+
+  #project-images{
+    font-size: 1.1rem;
   }
 }
 

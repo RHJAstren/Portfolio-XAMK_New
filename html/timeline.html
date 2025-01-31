@@ -28,64 +28,86 @@
       </div>
       <div>
         <p id="personal-summary">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi
-          blanditiis, corporis necessitatibus asperiores deserunt sunt nobis
-          eveniet adipisci dignissimos accusamus quas commodi repellat officiis
-          alias pariatur eligendi mollitia quae quos architecto ab maiores
-          provident natus. Quia nemo ea accusantium ducimus eius, quas
-          recusandae blanditiis nobis esse alias neque facere deleniti.
+          Here is a small collection of my academic and professional career.
         </p>
       </div>
+      <h2>Working Career</h2>
       <div id="work-timeline">
         <div id="job">
-          <h3>Work name</h3>
-          <p id="time-at-job">
-
-          </p>
+          <h3>XAMK Game Studios</h3>
+          <div id="time-at">
+            <span>2024 Summer Internship</span>
+          </div>
           <div id="short-summary">
             <p>
-
+              For the 2024 summer I applied for a summer internship at our universities Game studio. 
+              During the summer internship I worked on a virtual environment for a local exhibition 
+              centre, Satama Areena
             </p>
           </div>
         </div>
         <div id="job">
-          <h3>Work name</h3>
-          <p id="time-at-job">
-
-          </p>
+          <h3>HUS: Secretary</h3>
+          <div id="time-at">
+            <span>2019, 2021-2023</span>
+          </div>
           <div id="short-summary">
             <p>
-
+              From August until the end of 2019, I worked as a secretary at Töölö Hospital. 
+              After the Military in 2020, I returned for a couple more times from 2021-2023.
             </p>
           </div>
         </div>
       </div>
+      <h2>Educational Career</h2>
       <div id="eudcation-timeline">
         <div id="institute">
-          <h3>Institute name</h3>
-          <p id="time-at-institute">
-
-          </p>
+          <h3>XAMK: Game Programming</h3>
+          <div id="time-at">
+            <span>2022-2026</span>
+          </div>
           <div id="short-summary">
-            <p id="my-education">
-
+            <p>
+              From the autumn of 2022 I have been living in Kotka doing my Bachelors in Game Programming.
+              Over the years I have accomplished things that I didn't think I could. Under achievements you can find a bit more.
             </p>
-            <p id="grades">
-
-            </p>
+            <h4>Study components:</h4>
+            <ul id="courses">
+              <li>C++ Programming (Algorithms and Data Structs)</li>
+              <li>Game Programming</li>
+              <li>Architecture and Design Patterns</li>
+              <li>Business classes</li>
+              <li>And many more</li>
+            </ul>
           </div>
         </div>
         <div id="institute">
-          <h3>Institute name</h3>
-          <p id="time-at-institute">
-
-          </p>
+          <h3>TU/e: Psychology & Technology</h3>
+          <div id="time-at">
+            <span>2021-2022</span>
+          </div>
           <div id="short-summary">
-            <p id="my-education">
-
+            <p>
+              In 2021 I moved abroad to the Netherlands to study my passion, Psychology along side technology. Unfortunately I wasn't 
+              able to complete my education and gad to drop out. I was still able to complete some courses.
             </p>
-            <p id="grades">
-
+            <h4>Courses: </h4>
+            <ul id="courses">
+              <li>Social Psychology</li>
+              <li>User-Centered Design</li>
+              <li>Python Programming</li>
+            </ul>
+          </div>
+        </div>
+        <div id="institute">
+          <h3>European School of Helsinki</h3>
+          <div id="time-at">
+            <span>2015-2019</span>
+          </div>
+          <div id="short-summary">
+            <p>
+              After moving back to Finland from Belgium, I enrolled in the European School of Helsinki where I finished my Secondary
+              education. I graduated with an average of 71.40 % or Magna Cum Laureate.
             </p>
           </div>
         </div>
@@ -160,17 +182,16 @@
   }
 
   #work-timeline, #eudcation-timeline{
-    display: block;
     margin: 1.5rem 0;
   }
 
   #job, #institute{
-    margin: 1rem;
     border-width: 3px;
     border-radius: 0.75rem;
+    margin: 1rem 0;
   }
 
-  #job {
+  #job{
     background-color: var(--color-bg-alt-2);
     border-color: var(--color-bg-alt);
   }
@@ -181,7 +202,35 @@
     color: var(--color-text-white);
   }
 
+  #time-at{
+    margin: .5rem 0;
+  }
+
+  span{
+    border-width: 1px;
+    border-radius: 0.75rem;
+    padding: .2rem;
+    background-color: var(--color-link-alt);
+    color: var(--color-text);
+  }
+
+  h4{
+    margin: .5rem 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  
+  #short-summary{
+    font-size: 1.1rem;
+  }
+
   #move {
     margin-top: 3rem;
+  }
+
+  @media screen and (max-width: 420px){
+    #short-summary{
+      font-size: .94rem;
+    }
   }
 </style>

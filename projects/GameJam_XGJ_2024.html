@@ -1,1 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../css/style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+      integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <title>XGJ Fall 2024</title>
+  </head>
+  <body>
+    <main>
+      <div id="top-header">
+        <div>
+          <a href="/" class="text-3xl rounded-xl border-3"> RA </a>
+        </div>
+        <div>
+          <h1 class="text-3xl lg:text-5xl font-bold">XGJ fall 2024</h1>
+          <sub id="sub-name" class="lg:text-xl">Socket Horror</sub>
+        </div>
+      </div>
+      <div id="report">
+        <div id="simple-info">
+          <div id="img-container">
+            <img src="../img/Socket_logo.png" alt="Image of the game" />
+          </div>
+          <div id="list">
+            <ul>
+              <li>UI and environment design - Roope Astrén</li>
+              <li>Programming - Aleksi Ahonen</li>
+              <li>2D UI elements & 3D modelling - Markus Torkkell</li>
+              <li>3D Modelling - Kaspian Nyman</li>
+              <li>Audio and SFX - Niclas Valpola</li>
+            </ul>
+          </div>
+        </div>
+        <div id="report-summary">
+          <h3>Point and click match the shape</h3>
+          <div id="paragraph">
+            <blockquote>
+              | Socket:
+              <em
+                >a natural or artificial hollow into which something fits or in
+                | <br />| which something revolves. |</em
+              >
+            </blockquote>
+            <p>
+              The theme for 2024 XAMK Game Jam Fall the theme was socket. A kind
+              of an abstract type theme for which we decided on something more
+              simple.
+            </p>
+          </div>
+          <h3>The Game: What I worked on</h3>
+          <div id="paragraph">
+            <p>
+              This was my first Unreal Engine 5 project so I mainly worked on the basics. 
+              Making a useable and scalable UI and creating the small play area and player 
+              character were my main points of focus. The most technical thing I dipped my feet into
+              was using easing to turn on the light in the game scene.
+            </p>
+          </div>
+          <div id="project-images">
+            <div id="img-container">
+              <img src="../img/Socket_SS_1.png" alt="image of the project" />
+              <sub>
+                Point of view of the player. Put objects from the tray into the right sockets.
+              </sub>
+            </div>
+            <div id="img-container">
+              <img src="../img/Socket_SS_2.png" alt="image of the project" />
+              <sub>
+                The play area from outside of the players view. Very simple but effective.
+              </sub>
+            </div>
+          </div>
+          <h3>The problems</h3>
+          <div id="paragraph">
+            <p>
+              Biggest problem was with using the Blueprints that are provided in the
+              Unreal Engine 5. The blueprints are confusing to read and require a sense 
+              of confidence to use. I wasn't able to get the C++ programming to work so 
+              for next time I will set up my editor so that I'll be able to use it 100 %.
+            </p>
+          </div>
+          <h3>Conclusion</h3>
+          <div id="paragraph">
+            <p>
+              This time the project was in the right scope of the whole event so it was 
+              already a step in the right direction. The project hit a roadblock once I had to use C++.
+              For what ever reason the editor could not recognize the C++ code and would throw errors.
+              Overall, it was an improvement from our previous project and we will keep improving over the 
+              year.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div id="move">
+        <a
+          href="../html/hub.html"
+          class="rounded-xl border-3 text-xl lg:text-3xl font-bold"
+        >
+          <i class="fa-solid fa-arrow-left"></i>
+        </a>
+      </div>
+    </main>
+    <footer
+      id="contact"
+      class="flex flex-col gap-5 lg:flex-row lg:gap-15 justify-center"
+    >
+      <div id="links" class="flex flex-row gap-5 justify-center">
+        <div>
+          <a
+            href="https://www.linkedin.com/in/roope-astren/"
+            target="_blank"
+            class="text-5xl"
+          >
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+        </div>
+        <div>
+          <a
+            href="https://github.com/astroxamk"
+            target="_blank"
+            class="text-5xl"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </div>
+        <div>
+          <a
+            href="https://www.instagram.com/rhj.astren/"
+            target="_blank"
+            class="text-5xl"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+      <div class="lg:text-xl">
+        <ul>
+          <li>Location: Kotka, Finland</li>
+          <li>Education: XAMK - Game Programming</li>
+          <li>E-mail: roope.astren@gmail.com</li>
+        </ul>
+      </div>
+      <div class="lg:text-xl">&copy Roope Astrén</div>
+    </footer>
+  </body>
+</html>
 
+<script></script>
+
+<style>
+  #top-header {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    margin: 3.5rem 0 2rem 0;
+  }
+
+  #top-header a {
+    background-color: var(--color-link);
+    padding: 5px;
+  }
+
+  #sub-name {
+    font-size: 1rem;
+  }
+</style>
