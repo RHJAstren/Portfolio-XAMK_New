@@ -33,111 +33,100 @@
         </p>
       </div>
       <h2>Projects</h2>
-      <div id="projects" class="scroll-container">
-        <div id="project">
-          <h3 class="font-bold text-xl">Aerocore</h3>
-          <p id="summary">
-            The theme for 2025s Finnish Game Jam was bubble's. Yes, I know you might be thiking:
-            "<span class="italic">What about bubbles is scary?</span>", and you would be correct. There is 
-            nothing really scary about bubbles. The game that we sought to make would follow a liminal space type
-            in the style of <span class ="font-bold">Frutiger Aero</span>.
-          </p>
-          <div id="link">
-            <a
-              href="../projects/GameJam_FGJ_2025.html"
-              id="toggle-report"
-              class="rounded-xl border-2 text-l"
-              >Show more</a
-            >
-          </div>
-        </div>
-        <div id="project">
-          <h3 class="font-bold text-xl">Socket Horror</h3>
-          <p id="summary">
-            First game project using Unreal Engine 5. A point and click horror game. 
-            This project was made as a part of XAMK Game Jam Fall 2024. 
-          </p>
-          <div id="link">
-            <a
-              href="../projects/GameJam_XGJ_2024.html"
-              id="toggle-report"
-              class="rounded-xl border-2 text-l"
-              >Show more</a
-            >
-          </div>
-        </div>
-        <div id="project">
-          <h3 class="font-bold text-xl">SCP: Student Card Please</h3>
-          <p id="summary">
-            A <span class="italic">Papers, Please</span> inspired restaurant simulator with some horror elements.
-            The project was made as a product of Fuxi Game Jam Fall 2024
-          </p>
-          <div id="link">
-            <a
-              href="../projects/GameJam_Fuxi_2024.html"
-              id="toggle-report"
-              class="rounded-xl border-2 text-l"
-              >Show more</a
-            >
-          </div>
-        </div>
-      </div>
-      <h2>Achievements</h2>
-      <div id="accomplishments" class="scroll-container">
-        <div id="accomplishment">
-          <h3 class="font-bold text-xl">Event Organizing</h3>
-          <p>
-            A collection of events I have organized or tried to organize.
-          </p>
-          <ul>
-            <li>Games Co-op</li>
-            <li>itFetchQuest()</li>
-            <li>XAMK IT-Department LANs</li>
+      <section id="projects">
+        <div class="carousel" data-carousel>
+          <button class="carousel-btn prev" data-carousel-button="prev"><i class="fa-solid fa-arrow-left"></i></button>
+          <button class="carousel-btn next" data-carousel-button="next"><i class="fa-solid fa-arrow-right"></i></button>
+          <ul data-slides>
+            <li id="project" data-active>
+              <h3 class="font-bold text-xl" id="list-item-title">Aerocore</h3>
+              <div id="link-container">
+                <a
+                  href="../projects/GameJam_FGJ_2025.html"
+                  ><img src="../img/AeroCore_logo.png" alt="Aerocore" class="rounded-xl border-2"></a
+                >
+              </div>
+            </li>
+            <li id="project">
+              <h3 class="font-bold text-xl" id="list-item-title">Socket Horror</h3>
+              <div id="link-container">
+                <a
+                  href="../projects/GameJam_XGJ_2024.html"
+                  ><img src="../img/Socket_logo.png" alt="Aerocore" class="rounded-xl border-2"></a
+                >
+              </div>
+            </li>
+            <li id="project">
+              <h3 class="font-bold text-xl" id="list-item-title">SCP: Student Card Please</h3>
+              <div id="link-container">
+                <a
+                  href="../projects/GameJam_Fuxi_2024.html"
+                  ><img src="../img/SCP_Logo.png" alt="Aerocore" class="rounded-xl border-2"></a
+                >
+              </div>
+            </li>
           </ul>
-          <div id="link">
-            <a
-              href="../Achievements/event_organizing.html"
-              id="toggle-report"
-              class="rounded-xl border-2 text-l"
-              >Show more</a
-            >
-          </div>
         </div>
-        <div id="accomplishment">
-          <h3 class="font-bold text-xl">Elements of AI</h3>
-          <p id="summary">
-            Introduction to AI in the modern world provided by Helsinki University
-          </p>
-          <div id="certificate">
-            <img src="../img/certificate-elements-of-ai.png" alt="Elements of AI Certificate">
-          </div>
+      </section>
+      <h2>Achievements</h2>
+      <section id="achievements">
+        <div class="carousel" data-carousel>
+          <button class="carousel-btn prev" data-carousel-button="prev"><i class="fa-solid fa-arrow-left"></i></button>
+          <button class="carousel-btn next" data-carousel-button="next"><i class="fa-solid fa-arrow-right"></i></button>
+          <ul data-slides>
+            <li id="achievement" data-active>
+              <h3 class="font-bold text-xl" id="list-item-title">Event Organizing</h3>
+              <div id="link-container">
+                <a
+                  href="../Achievements/event_organizing.html"
+                  >
+                  <div id="img-container">
+                    <img src="../img/GC_Banner_Teams.png" alt="Games Co-op" class="rounded-xl border-2">
+                    <img src="../img/Banner_games_coop.png" alt="Games Co-op 2" class="rounded-xl border-2">
+                  </div>
+                  </a
+                >
+              </div>
+            </li>
+            <li id="achievement">
+              <h3 class="font-bold text-xl" id="list-item-title">Elements of AI</h3>
+              <div id="link-container">
+                <img src="../img/certificate-elements-of-ai.png" alt="Aerocore" class="rounded-xl border-2">
+              </div>
+            </li>
+            <li id="achievement">
+              <h3 class="font-bold text-xl" id="list-item-title">Scrum Master Certificate</h3>
+              <p id="summary">
+                The Scrum master handles the scrum meetings and keeps the 
+                project workers on their feet about the project.
+              </p>
+              <div id="link-container">
+                <div id="certificate-csm">
+                  <img src="../img/seal-csm.png" alt="Scrum Master Certificate">
+                </div>
+              </div>
+            </li>
+            <li id="achievement">
+              <h3 class="font-bold text-xl" id="list-item-title">Responsive Web Design</h3>
+              <p id="summary">
+                A certificate provided by freecodecamp.org for completing a free course on responsive 
+                web design
+              </p>
+              <div id="link-container">
+                <div id="certificate-fcc">
+                  <a
+                  href="https://www.freecodecamp.org/certification/fcc05fe3bf1-3983-40aa-8817-b024bb30a7de/responsive-web-design"
+                  target="_blank"
+                  id = "icon"
+                  onclick="return false"
+                  ><i class="fa-brands fa-free-code-camp"></i
+                ></a>
+                </div>
+              </div>
+            </li>
+          </ul>
         </div>
-        <div id="accomplishment">
-          <h3 class="font-bold text-xl">Scrum Master Certificate</h3>
-          <p id="summary">
-            Scrum is an agile development style. The Scrum master handles the scrum meetings and keeps the 
-            project workers on their feet about the project
-          </p>
-          <div id="certificate">
-            <img src="../img/seal-csm.png" alt="Scrum Master Certificate">
-          </div>
-        </div>
-        <div id="accomplishment">
-          <h3 class="font-bold text-xl">Responsive Web Design</h3>
-          <p id="summary">
-            A certificate provided by freecodecamp.org for completing a free course on responsive web design
-          </p>
-          <div id="icon-link">
-            <a
-              href="https://www.freecodecamp.org/certification/fcc05fe3bf1-3983-40aa-8817-b024bb30a7de/responsive-web-design"
-              target="_blank"
-              class="text-4xl rounded-full border-1"
-              id = "icon"
-              ><i class="fa-brands fa-free-code-camp"></i
-            ></a>
-          </div>
-        </div>
-      </div>
+      </section>
       <div id="movement-keys">
         <div id="move">
           <a href="../index.html" class="rounded-xl border-3 text-xl lg:text-3xl font-bold">
@@ -199,7 +188,24 @@
   </body>
 </html>
 
-<script></script>
+<script>
+  const buttons = document.querySelectorAll("[data-carousel-button]")
+
+  buttons.forEach(button=>{
+    button.addEventListener("click", () =>{
+      const offset = button.dataset.carouselButton === "next" ? 1 : -1
+      const slides = button.closest("[data-carousel]").querySelector("[data-slides]")
+
+      const activeSlide = slides.querySelector("[data-active]")
+      let newIndex = [...slides.children].indexOf(activeSlide) + offset
+      if (newIndex < 0) newIndex = slides.children.length - 1
+      if (newIndex >= slides.children.length) newIndex = 0
+
+      slides.children[newIndex].dataset.active = true
+      delete activeSlide.dataset.active
+    })
+  })
+</script>
 
 <style>
   #top-header {
@@ -216,57 +222,125 @@
   #personal-summary {
     margin: 0 1.5rem;
   }
-
-  #projects,
-  #accomplishments {
-    display: block;
-    margin-bottom: 1.5rem;
+  
+  #projects, #achievements{
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
-  #project,
-  #accomplishment {
-    margin: 1rem;
+  .carousel{
+    width: 85vw;
+    height: 35vh;
+    position: relative;
+    display: flex;
+  }
+
+  .carousel > ul{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+  }
+
+  .carousel-btn{
+    position: absolute;
+    top: 15px;
+    cursor: pointer;
+    padding: 0 .5rem;
+    z-index: 2;
+    font-size: 1.5rem;
+  }
+
+  .carousel-btn.prev{
+    left: 1rem;
+  }
+
+  .carousel-btn.next{
+    right: 1rem;
+  }
+
+  #project, #achievement{
+    position: absolute;
+    inset: 0;
+    opacity: 0;
     border-width: 3px;
-    border-radius: 0.75rem;
+    border-radius: .75rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
   }
 
-  #project {
+  #list-item-title{
+    margin-top: .75rem;
+    width: 50%;
+  }
+
+  #link-container{
+    margin: auto;
+    width: 90%;
+    height: auto;
+    max-height: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  #link-container a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #link-container img{
+    width: 100%;
+    max-height: 100%;
+  }
+
+  #link-container #img-container{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+  }
+
+  #project[data-active], #achievement[data-active]{
+    opacity: 1;
     background-color: var(--color-bg-alt-2);
     border-color: var(--color-bg-alt);
-  }
-
-  #accomplishment {
-    background-color: var(--color-bg-alt);
-    border-color: var(--color-bg-alt-2);
-    color: var(--color-text-white);
-  }
-
-  #accomplishment ul{
-    margin-top: .5rem;
-  }
-
-  #accomplishment a {
-    color: var(--color-text)
+    pointer-events: auto;
   }
 
   #summary {
-    margin: 0.5rem 0;
+    padding: 1rem 0;
     font-size: 1rem;
   }
 
-  #certificate{
+  #certificate, #certificate-csm{
     display: flex;
     justify-content: center;
     align-items: center;
     padding: .2rem .5rem;
   }
 
-  #certificate img{
+  #certificate > img{
     width: clamp(200px, 350px, 450px);
+  }
+
+  #certificate-csm > img{
+    width: clamp(5vw, 35vw, 50vw);
+  }
+
+  #certificate-fcc > a{
+    font-size: 5rem;
   }
   
   #icon-link{
-    margin-bottom: 1rem;
+    margin: 2.5rem 0;
+    font-size: 2rem;
   }
 
   #icon {
@@ -284,13 +358,16 @@
     margin-top: 3rem;
   }
 
-  #toggle-report {
-    padding: 0 3px;
-    background-color: var(--color-link);
-  }
-
   #move a {
     padding: 1rem 1.5rem;
     background-color: var(--color-link-alt);
   }
+
+  @media screen and (min-width: 650px){
+    .carousel{
+      width: 30rem;
+      height: 25rem;
+    }
+  }
+
 </style>
