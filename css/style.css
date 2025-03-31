@@ -5,13 +5,12 @@
 }
 
 :root {
-  --color-bg: #eaa8d1;
-  --color-bg-alt: #8f5172;
-  --color-bg-alt-2: #d1619d;
+  --color-bg: #2455cb;
+  --color-bg-alt: #4d75be;
   --color-text: #0c0f0a;
   --color-text-white: #fff;
-  --color-link: #56cbf9;
-  --color-link-alt: #00ffcd;
+  --color-link: #1937c0;
+  --color-link-alt: #0f31c9;
 }
 
 body {
@@ -20,7 +19,7 @@ body {
   background-color: var(--color-bg);
   display: flex;
   justify-content: center;
-  color: var(--color-text);
+  color: var(--color-text-white);
   min-height: 85vh;
   flex-direction: column;
 }
