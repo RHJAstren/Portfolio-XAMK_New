@@ -62,6 +62,16 @@
                 </p>
               </div>
             </li>
+            <li id="job">
+              <h3 class="font-bold text-xl" id="list-item-title">Rovio: Work Experience</h3>
+              <div id="time-at">
+                <span>2017</span>
+              </div>
+              <div id="short-summary">
+                I spent my TET (Work Experience) at Rovio as a Game Tester. I tested games like
+                Angry Birds, Nibblers and an unnamed matching video game.
+              </div>
+            </li>
           </ul>
         </div>
       </section>
@@ -195,8 +205,26 @@
       if (newIndex < 0) newIndex = slides.children.length - 1
       if (newIndex >= slides.children.length) newIndex = 0
 
-      slides.children[newIndex].dataset.active = true
-      delete activeSlide.dataset.active
+      const exitClass = offset > 0 ? 'slide-exit-right' : 'slide-exit-left'
+
+      const newSlide = slides.children[newIndex]
+
+      newSlide.style.opacity = "0"
+      newSlide.style.transform = offset > 0 ? 'translateX(-100%)' : 'translateX(100%)'
+
+      activeSlide.classList.add(exitClass)
+
+      setTimeout(() => {
+        newSlide.style.opacity = ""
+        newSlide.style.transform = ""
+
+        newSlide.dataset.active = true
+        delete activeSlide.dataset.active
+
+        setTimeout(()=>{
+          activeSlide.classList.remove(exitClass)
+        }, 650)
+      }, 50)
     })
   })
 </script>
@@ -228,12 +256,14 @@
     height: 30vh;
     position: relative;
     display: flex;
+    overflow: hidden;
   }
   .carousel-2{
     width: 85vw;
     height: 50vh;
     position: relative;
     display: flex;
+    overflow: hidden;
   }
 
   .carousel > ul{
@@ -275,6 +305,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    transition: transform 0.6s ease, opacity 0.5s ease;
   }
 
   #list-item-title{
@@ -298,6 +329,19 @@
     opacity: 1;
     background-color: var(--color-bg-alt-2);
     border-color: var(--color-bg-alt);
+    transition: transform 0.6s ease, opacity 0.5s ease;
+  }
+
+  .slide-exit-left{
+    transform: translateX(-100%) !important;
+    opacity: 0 !important;
+    transition: transform 0.6s ease, opacity 0.5s ease;
+  }
+
+  .slide-exit-right{
+    transform: translateX(100%) !important;
+    opacity: 0 !important;
+    transition: transform 0.6s ease, opacity 0.5s ease;
   }
 
   #time-at{

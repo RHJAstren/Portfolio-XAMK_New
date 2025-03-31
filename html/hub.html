@@ -201,8 +201,26 @@
       if (newIndex < 0) newIndex = slides.children.length - 1
       if (newIndex >= slides.children.length) newIndex = 0
 
-      slides.children[newIndex].dataset.active = true
-      delete activeSlide.dataset.active
+      const exitClass = offset > 0 ? 'slide-exit-left' : 'slide-exit-right'
+
+      const newSlide = slides.children[newIndex]
+
+      newSlide.style.opacity = "0"
+      newSlide.style.transform = offset > 0 ? 'translateX(100%)' : 'translateX(-100%)'
+
+      activeSlide.classList.add(exitClass)
+
+      setTimeout(() => {
+        newSlide.style.opacity = ""
+        newSlide.style.transform = ""
+
+        newSlide.dataset.active = true
+        delete activeSlide.dataset.active
+
+        setTimeout(()=>{
+          activeSlide.classList.remove(exitClass)
+        }, 650)
+      }, 50)
     })
   })
 </script>
@@ -234,6 +252,7 @@
     height: 35vh;
     position: relative;
     display: flex;
+    overflow: hidden;
   }
 
   .carousel > ul{
@@ -270,6 +289,7 @@
     align-items: center;
     justify-content: center;
     pointer-events: none;
+    transition: transform 0.6s ease, opacity 0.5s ease;
   }
 
   #list-item-title{
@@ -309,9 +329,23 @@
 
   #project[data-active], #achievement[data-active]{
     opacity: 1;
+    transform: translateX(0);
     background-color: var(--color-bg-alt-2);
     border-color: var(--color-bg-alt);
     pointer-events: auto;
+    transition: transform 0.6s ease, opacity 0.5s ease;
+  }
+
+  .slide-exit-left{
+    transform: translateX(-100%) !important;
+    opacity: 0 !important;
+    transition: transform 0.6s ease, opacity 0.5s ease;
+  }
+
+  .slide-exit-right{
+    transform: translateX(100%) !important;
+    opacity: 0 !important;
+    transition: transform 0.6s ease, opacity 0.5s ease;
   }
 
   #summary {
