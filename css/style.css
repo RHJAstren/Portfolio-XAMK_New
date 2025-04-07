@@ -5,8 +5,8 @@
 }
 
 :root {
-  --color-bg: #2455cb;
-  --color-bg-alt: #4d75be;
+  --color-bg: #2454cb;
+  --color-bg-alt: #27658b;
   --color-text: #0c0f0a;
   --color-text-white: #fff;
   --color-link: #1937c0;
@@ -15,12 +15,11 @@
 
 body {
   text-align: center;
-  background-image: url("../img/bg_image.png");
-  background-color: var(--color-bg);
+  background: linear-gradient(180deg, rgba(36,84,203,1) 0%, rgba(39,101,139,1) 100%);
   display: flex;
   justify-content: center;
   color: var(--color-text-white);
-  min-height: 85vh;
+  min-height: 100vh;
   flex-direction: column;
 }
 

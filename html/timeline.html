@@ -242,7 +242,7 @@
   }
 
   #personal-summary{
-    margin: 0 1.5rem;
+    margin: 0 7vw;
   }
 
   #work-timeline, #eudcation-timeline{
@@ -253,14 +253,14 @@
 
   .carousel{
     width: 85vw;
-    height: 30vh;
+    height: clamp(35vh, 25vh, 22vh);
     position: relative;
     display: flex;
     overflow: hidden;
   }
   .carousel-2{
     width: 85vw;
-    height: 50vh;
+    height: clamp(55vh, 35vh, 45vh);
     position: relative;
     display: flex;
     overflow: hidden;
@@ -366,21 +366,29 @@
     margin-top: 3rem;
   }
 
-  @media screen and (max-width: 420px){
+  @media screen and (min-width: 420px) and (max-width: 600px){
     #short-summary{
       font-size: .94rem;
     }
-  }
 
-  @media screen and (min-width: 650px){
     .carousel{
-      width: 30rem;
-      height: 12.5rem;
+      height: 28vh;
     }
 
     .carousel-2{
-      width: 30rem;
-      height: 25rem;
+      height: 45vh;
+    }
+  }
+
+  @media screen and (min-width: 800px){
+    .carousel{
+      width: 35vw;
+      height: 15vh;
+    }
+
+    .carousel-2{
+      width: 35vw;
+      height: 22rem;
     }
   }
 </style>
