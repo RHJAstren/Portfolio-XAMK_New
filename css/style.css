@@ -9,7 +9,7 @@
   --color-bg-alt: #27658b;
   --color-text: #0c0f0a;
   --color-text-white: #fff;
-  --color-link: #1937c0;
+  --color-link: #122888;
   --color-link-alt: #0f31c9;
 }
 
@@ -20,17 +20,29 @@ body {
   justify-content: center;
   color: var(--color-text-white);
   min-height: 100vh;
+  min-width: 100vw;
   flex-direction: column;
 }
 
 main{
-  margin: 2rem 15vw 3rem 15vw;
+  margin: 2rem 10vw 3rem 10vw;
 }
 
 h1{
   background: url("../img/Text_bg_img.jpg");
   background-clip: text;
   color: transparent;
+}
+
+#top-header {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  margin: 3.5rem -5rem 2rem;
+}
+
+#top-header a {
+  background-color: var(--color-link);
+  padding: 5px;
 }
 
 #summary{
@@ -101,6 +113,11 @@ h2{
   font-size: 1.3rem;
 }
 
+#move a {
+  padding: 1rem 1.5rem;
+  background-color: var(--color-link);
+}
+
 @media screen and (min-width: 1200px){
   main{
     margin: 2rem 25vw 3rem 25vw;
@@ -145,3 +162,8 @@ h2{
   }
 }
 
+@media screen and (max-width: 420px){
+  #top-header{
+    margin: 3.5rem 0 2rem;
+  }
+}

@@ -117,6 +117,7 @@
                   <a
                   href="https://www.freecodecamp.org/certification/fcc05fe3bf1-3983-40aa-8817-b024bb30a7de/responsive-web-design"
                   target="_blank"
+                  class="border-5 rounded-full"
                   id = "icon"
                   onclick="return false"
                   ><i class="fa-brands fa-free-code-camp"></i
@@ -226,17 +227,6 @@
 </script>
 
 <style>
-  #top-header {
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    margin: 3.5rem 0 2rem;
-  }
-
-  #top-header a {
-    background-color: var(--color-link);
-    padding: 5px;
-  }
-
   #personal-summary {
     margin: 0 7vw;
   }
@@ -330,7 +320,7 @@
   #project[data-active], #achievement[data-active]{
     opacity: 1;
     transform: translateX(0);
-    background-color: var(--color-bg);
+    background-color: var(--color-bg-alt);
     border-color: var(--color-text-white);
     border-style: outset;
     pointer-events: auto;
@@ -350,7 +340,7 @@
   }
 
   #summary {
-    padding: 1rem 0;
+    padding: 1rem 2rem;
     font-size: 1rem;
   }
 
@@ -366,7 +356,7 @@
   }
 
   #certificate-csm > img{
-    width: clamp(5vw, 35vw, 50vw);
+    width: clamp(200px, 250px, 400px);
   }
 
   #certificate-fcc > a{
@@ -380,7 +370,8 @@
 
   #icon {
     color: var(--color-link-alt);
-    padding: 0 5px;
+    background-color: var(--color-text-white);
+    padding: 5px;
   }
 
   #link {
@@ -391,11 +382,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-top: 3rem;
-  }
-
-  #move a {
-    padding: 1rem 1.5rem;
-    background-color: var(--color-link-alt);
   }
 
   @media screen and (min-width: 650px){
