@@ -356,7 +356,7 @@
   }
 
   #certificate-csm > img{
-    width: clamp(200px, 250px, 400px);
+    width: clamp(200px, 250px, 400px) !important;
   }
 
   #certificate-fcc > a{
@@ -391,4 +391,13 @@
     }
   }
 
+  @media screen and (max-width: 420px){
+    #certificate-csm > img{
+      max-width: 150px;
+    }
+
+    #certificate-fcc > a{
+      font-size: 3.5rem;
+    }
+  }
 </style>
