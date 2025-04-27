@@ -80,6 +80,12 @@ footer {
   margin: 0 auto;
 }
 
+#itch-io-frame{
+  padding: auto;
+  margin: auto -10rem 2rem 10rem;
+
+}
+
 #video-container embed{
   width: 100%;
   aspect-ratio: 16/9;
@@ -148,6 +154,11 @@ h2{
   background-color: var(--color-link);
 }
 
+blockquote{
+  font-size: 2rem;
+  padding: 2rem 0;
+}
+
 @media screen and (min-width: 1200px ){
   main{
     margin: 2rem 25vw 3rem 25vw;
@@ -193,6 +204,11 @@ h2{
 
   #project-images{
     font-size: 1.1rem;
+  }
+
+  #itch-io-frame iframe{
+    margin: auto;
+    
   }
 
   #top-header{

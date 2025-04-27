@@ -13,7 +13,7 @@
     />
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <title>name of game</title>
+    <title>alus.</title>
   </head>
   <body>
     <main>
@@ -22,21 +22,23 @@
           <a href="../index.html" class="text-3xl rounded-xl border-3"> RA </a>
         </div>
         <div>
-          <h1 class="text-3xl lg:text-5xl font-bold">Name of game</h1>
-          <sub id="sub-name" class="lg:text-xl">--- What it was for ---</sub>
+          <h1 class="text-3xl lg:text-5xl font-bold">alus.</h1>
+          <sub id="sub-name" class="lg:text-xl">--- A game for <em>Ecosystems of Games</em> course ---</sub>
         </div>
       </div>
       <div id="report">
         <div id="simple-info">
           <div id="img-container">
-            <img src="../img/Placeholder.png" alt="Placeholder">
+            <img src="../img/alus_cover.png" alt="Placeholder">
           </div>
           <div id="list">
             <ul>
-
+              <li>Roope Astrén - <span>Programming</span></li>
+              <li>Markus Torkkell - <span>UI/UX designer & Music</span></li>
+              <li>Marko Salo - <span>Game Art & Video Editing</span></li>
             </ul>
             <sub>
-              <a href="" target="_blank"
+              <a href="https://rhjastren.itch.io/alus-mobile" target="_blank"
               class="text-xl lg:text-3xl border-3 rounded-xl" id="link"
               >
                 LINK TO GAME
@@ -45,27 +47,136 @@
           </div>
         </div>
         <div id="report-summary">
-          <h3>Subtitle</h3>
+          <h3>Description</h3>
           <div id="paragraph">
             <p>
-
+              An endless runner game. Goal of the game is to get as far as possible.
+              Avoid the objects and the authorities.
+            </p>
+            <p>
+              A flappy bird and Jetpack Joyride inspired game, with an added
+              function of shooting.
             </p>
           </div>
-          <div id="project-images">
-            <div id="img-container">
-
-            </div>
+          <h3>Progress</h3>
+          <div id="paragraph">
+            <p>
+              The work started by making a Unity project as all other light weight
+              work starts with. First of it was important to have a player that
+              can be used as a placeholder for the main sprite. Making all
+              placeholder sprites for the game took no time to make as they would
+              be replaced in no time.
+            </p>
+            <p>
+              After the placeholders were made, it was time to start working on
+              the actual game. Started by making the main scripts
+              (Playercontroller, enemy, and object movement) scripts.
+            </p>
+            <p>
+              Work on the player script started off by making the player move and
+              creating a "switch" -type control so that the player would change
+              the direction of the movement by pressing a button. This is the main
+              way of movement in the game.
+            </p>
+            <p>
+              After that, I started the work on projectile scripts. Intantiate
+              from the tip of the character and destroy it after a certain amount
+              of time to avoid overloading the game. With that, the enemy script
+              was the next thing I tackeled. Making the projectile and enemy
+              destroy each other simultaneously was the point. The obstacle
+              instead would only destroy the projectile if hit.
+            </p>
+            <p>
+              With the main players out of the way, it wastime to look into the
+              barriers on the top and the bottom of the screen. Making the
+              polarity switch at the same time as the movement of the player, was
+              the main point.
+            </p>
+            <p>
+              Now the game was running well. The next stop would be the to
+              implement the score functions to keep track of how far a player was
+              able to go and to increase the difficulty of the game as it
+              progressed.
+            </p>
+            <p>
+              At this point the game was in its final stretch so I made the
+              executive decision to make the game a Web and a mobile versions of
+              the game. This was a good decision as the game would be a good game
+              for PC and Mobile.
+            </p>
+            <p>
+              Adding the sounds and music to the game was quite simple thanks to
+              an easy to follow tutorial by Brackey. No problems here.
+            </p>
+            <p>And with that the game was complete.</p>
           </div>
           <h3>Problems</h3>
           <div id="paragraph">
             <p>
-
+              Here's the part what I dreaded the most. All of the problems that I
+              encountered on my journey:
             </p>
+            <ul>
+              <li>
+                <span>The movement switch:</span> I had already an idea for how
+                this could be accomplished with a boolean value, but because of my
+                lack of Unity programming I didn't think of using a <code
+                  >if(!insert boolean value)</code
+                >
+                if -function. This worked well.
+              </li>
+              <li>
+                <span>Random spawn location:</span> While finding the spawn
+                locations for all the enemies/objects was a simple task, making
+                the random spawn location took a bit of time. Using a
+                <code>vector<></code> type list, I was able to take the spawn
+                locations of all initiated game objects and then using a 
+                <code>for(int i = 0; i < 4; i++)</code> code line to pick any
+                integer between 0 and 3 to instantiate the enemy onto.
+              </li>
+              <li>
+                <span>Score manager:</span> I am not proud of this one, but the
+                lack of UI programming on Unity really showed here. One stupid
+                line of code broke the entire scoring system... that's all it
+                took.
+              </li>
+              <li>
+                <span>Player/enemy/obstacle speed-up:</span> This one was a bit
+                different. Making a working function and then applying it to all
+                of the game objects mentioned. This resulted in confusion and
+                making it work properly took quite a while.
+              </li>
+              <li>
+                <span>Switching from PC only to Mobile:</span> This is probably
+                the biggest notable problem I faced. Due to how I had written the
+                movement function, it messed with the touch controls for the game.
+                I had to remake the whole movement part of my original script to
+                accommodate the touch control scripts as well. The switch did not
+                go very smoothly at first, but after I had identified what was
+                actually happening, I just toughed my way through it. I managed to
+                make great controls for both the PC and Mobile versions, which I
+                will happily use in other games.
+              </li>
+              <li>
+                <span>GitHub:</span> Now by far the biggest cause of hair loss
+                during this project. The version contorl. Not only was the making
+                of a GitHub repository a pain in the ***, but then keeping it
+                updated resulted in other stupid problems. Mainly the fact that
+                the repo had successfully messed up the backgroung. Other
+                teammembers were unable to use the version I had made due to this
+                problem and they had no better way to fix it, other than making a
+                new repository. This was infuriating at the time, but quite
+                comical looking back at it now.
+              </li>
+            </ul>
           </div>
           <h3>Conclusion</h3>
           <div id="paragraph">
             <p>
-              
+              The project ended with a(n almost) finished project. On my part the
+              game was ready to be shipped. But now that I have heard feedback from
+              my peers, I will tune the game a little bit to have the game be fully
+              ready. The changes will be logged onto here.
             </p>
           </div>
         </div>
@@ -123,3 +234,9 @@
     </footer>
   </body>
 </html>
+
+<style>
+  #paragraph p, li{
+    margin: 1rem auto;
+  }
+</style>
