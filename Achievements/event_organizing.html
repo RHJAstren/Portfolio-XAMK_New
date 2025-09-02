@@ -13,7 +13,7 @@
     />
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <title>name of game</title>
+    <title>Event Organizing</title>
   </head>
   <body>
     <main>
@@ -21,53 +21,103 @@
         <div>
           <a href="../index.html" class="text-3xl rounded-xl border-3"> RA </a>
         </div>
-        <div>
-          <h1 class="text-3xl lg:text-5xl font-bold">Name of game</h1>
-          <sub id="sub-name" class="lg:text-xl">--- What it was for ---</sub>
+        <div id="title">
+          <h1 class="text-3xl lg:text-5xl font-bold">Event Organizing</h1>
+          <sub id="sub-name" class="lg:text-xl">--- Different events that I have organized ---</sub>
         </div>
       </div>
       <div id="report">
         <div id="simple-info">
-          <div id="img-container">
-            <img src="../img/Placeholder.png" alt="Placeholder">
+          <div>
+            <div id="img-container">
+              <img src="../img/GC_Banner_Teams.png" alt="Games CO-OP 2">
+            </div>
+            <div id="img-container">
+              <img src="../img/Banner_games_coop.png" alt="Games CO-OP">
+            </div>
           </div>
           <div id="list">
+            <h3>Events</h3>
             <ul>
-
+              <li>
+                Games CO-OP
+              </li>
+              <li>
+                itFetchQuest()
+              </li>
+              <li>
+                LANs
+              </li>
             </ul>
-            <sub>
-              <a href="" target="_blank"
-              class="text-xl lg:text-3xl border-3 rounded-xl" id="link"
-              >
-                LINK TO GAME
-              </a>
-            </sub>
           </div>
         </div>
         <div id="report-summary">
-          <h3>Subtitle</h3>
-          <div id="paragraph">
-            <p>
-
-            </p>
-          </div>
-          <div id="project-images">
-            <div id="img-container">
-
-            </div>
-          </div>
-          <h3>Problems</h3>
-          <div id="paragraph">
-            <p>
-
-            </p>
-          </div>
-          <h3>Conclusion</h3>
-          <div id="paragraph">
-            <p>
-              
-            </p>
-          </div>
+          <h3>Event Summaries</h3>
+          <ul id="events-container">
+            <li id="event">
+              <h4>Games CO-OP</h4>
+              <div id="paragraph">
+                <p>
+                  Games Co-op is the biggest event that I have helped organized.
+                  In XAMK we have Game Design, Game Programming and Game Technologies Bachelor courses. Programming and Technologies
+                  can be found in Kotka while the Designers can be found in Kouvola. This is why we decided to create this event;
+                  to bring all of the game industry students under the same roof.
+                </p>
+                <br>
+                <p>
+                  I am one of the lead organizers along side Mikael (Miksu) Joensuu and Nicole Winqvist. Miksu and Nicole were the
+                  ones presenting this idea to me and I agreed to be a part of the organizing team. I am a firm believer that 
+                  co-operation is the most important skill to have for working on a large scale project like video games. 
+                  The events purpose is to have young students attend it while older students would be able to share their own
+                  insights for the newer students in the industry.
+                </p>
+              </div>
+              <div>
+                <div id="img-container">
+                  <img src="../img/GamesCoopPoster.jpg" alt="Games CO-OP banner">
+                  <img src="../img/GAMES_CO-OP_2.png" alt="Games CO-OP banner">
+                </div>
+              </div>
+            </li>
+            <li id="event">
+              <h4>itFetchQuest()</h4>
+              <div id="paragraph">
+                <p>
+                  itFetchQuest() was supposed to be collaboration event with Cyberclub, Kotka Cybersecurity student organization.
+                  The event was to be a fun activity going around Kotka to see the city for new and old students. Students would
+                  be divided into teams of 4 and then given a problem solving task list which would benefit student teams with
+                  both Game industry and Cybersecurity students. This way we could start to mend the ICT students divide that 
+                  has happened in the past years.
+                </p>
+                <br>
+                <p>
+                  Unfortunately, the event had to be cancelled. Not enough students were interested in joining the student party.
+                  But I will try again next year. This time we will take into consideration what the other students want 
+                  form an event held both by Game industry and Cybersecurity students and plan a new event for the beginning of the
+                  next semester.
+                </p>
+                <div id="img-container">
+                  <img src="../img/itfetchquest.png" alt="itFetchQuest() promo">
+                </div>
+              </div>
+            </li>
+            <li id="event">
+              <h4>LANs</h4>
+              <div id="paragraph">
+                <p>
+                  I have been the main organizer for LANs that we have held on the Kotka campus.
+                  I have also planned and executed multiple different tournaments during the LANs.
+                </p>
+                <br>
+                <p>
+                  I have wanted to keep the LANs as casual and cozy as possible. The LANs have been open
+                  for all ICT students, current and former students to attend. We have had on average 
+                  about 40 people attending most LANs and luckily we have gotten funding for the LANs from 
+                  our study unit and tutoring money.
+                </p>
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
       <div id="move">
@@ -123,3 +173,60 @@
     </footer>
   </body>
 </html>
+
+<style>
+  #list h3{
+    font-size: 2rem;
+  }
+
+  #list li{
+    font-size: 1.2rem;
+  }
+
+  #simple-info #img-container img{
+    max-width: 100%;
+  }
+
+  #events-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #event h4{
+    font-weight: 600;
+    font-size: 1.35rem;
+  }
+
+  #event{
+    border: 1px solid var(--color-text-white);
+    border-radius: 0.75rem;
+    margin: 1rem .25rem auto;
+    background-color: var(--color-bg);
+  }
+  
+  #paragraph p{
+    margin: auto .35rem;
+  }
+
+  #img-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(0px);
+  }
+
+  #img-container img{
+    margin: auto .5rem ;
+    max-width: 65%;
+    width: 100%;
+    border: 1px solid var(--color-text-white);
+    border-radius: 0.75rem;
+  }
+
+  @media screen and (max-width: 600px){
+    #events-container{
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
