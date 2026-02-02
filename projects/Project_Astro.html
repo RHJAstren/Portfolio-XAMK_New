@@ -29,7 +29,7 @@
       <div id="report">
         <div id="simple-info">
           <div id="img-container">
-            <img src="../img/Placeholder.png" alt="Placeholder">
+            <img src="../img/Asrtro-frameworks.png" alt="The stack used for the portfolio">
           </div>
           <div id="list">
             <sub>
@@ -42,30 +42,92 @@
           </div>
         </div>
         <div id="report-summary">
-          <h3>Check the GitHub</h3>
+          <h3>The Project</h3>
           <div id="paragraph">
             <p>
-              I need to take screenshots from the portfolio once
-              I download the project and get it up and running again.
-              Meanwhile you can look at the code that I have written on
-              <strong>GitHub</strong>
+              The portfolio was worked on to be a professional portfolio. It used a frontend development framework called
+              Astro.js. Unfortunately there was a problem with the deployment of the website which is why I decided to abandon
+              the website.
+            </p>
+            <h3>What is Astro.js?</h3>
+            <p>
+              Astro.js is a new type of JavaScript frontend framework. It is meant to be easy to use and use a familiar component style
+              development pipeline. The components and the lack of having to write pure JavaScript made it very easy to use and learn. 
+              The components can be then included into a layout that allows the developer to only modify the layout themselves. This 
+              makes the development process seamless as well. Overall the development experience of Astro.js is very easy and allowed me to 
+              understand how frontend frameworks work.
             </p>
           </div>
           <div id="project-images">
             <div id="img-container">
-
+              <img src="../img/Layout_Example_visual.png" alt="An example of the layout.">
+              <sub>
+                The front page with the main layout rendered on the web.
+              </sub>
+            </div>
+            <div id="img-container">
+              <img src="../img/Project_cards_example.png" alt="An example of a project container page">
+              <sub>
+                A project display page. All the cards lead to different projects and/or educations
+                that I have been part of. 
+              </sub>
             </div>
           </div>
           <h3>Problems</h3>
           <div id="paragraph">
             <p>
-
+              The real problems of the project was with the deployment process. At first I intended to deploy the website using 
+              <strong>Netlify</strong> which allows developers to deploy web applications in real time and update them when needed.
+              The deployment process was supposed to be simple, however the service never let me deploy it due to a component type
+              in the portfolio called a <code>slug</code>, which is a component that allows Markdown files to be rendered on the Astro project.
+              The Markdown files contain all the information about the projects that I have been a part of, and contained information about
+              the times and types of projects they were.
             </p>
+            <br>
+            <p>
+              This problem would persist when I tried to deploy the website on GitHub Pages workflow. GitHub allows its users to
+              run a simple website on their workflow and the project should be named {userame}.github.io. This workflow is an easy way for new 
+              developers to have a portfolio on the web without the use of an external server. While the workflow actually allowed me to 
+              deploy the website, it could not work with the <code>slug</code> element and would not render the Markdown files.
+            </p>
+          </div>
+          <div id="project-images">
+            <div id="img-container">
+              <img src="../img/Layout_Example.png" alt="What the main layout of the pages look like">
+              <sub>
+                They main layout put in script. All yellow tags are a different component (eg. Nav for navigation,
+                ContactMe for a simple contact region and Footer for the footer of the page.). This layout is 
+                consistent accross all pages. The <code>&lt;slot /&gt;</code> tag is the place where the content of
+                the page is situated.
+              </sub>
+            </div>
+            <div id="img-container">
+              <img src="../img/Astro_config_file.png" alt="Picture of Astro.config.mjs">
+              <sub>
+                Picture of Astro.config.mjs. This is necessaru for deploying the website using any service.
+                However, the <code>slug</code> element cannot be rendered normally for some reason.
+              </sub>
+            </div>
+            <div id="img-container">
+              <img src="../img/Markdown example.png" alt="An example of a Markdown file">
+              <sub>
+                The Markdown file which contains all the inside info of the project.
+              </sub>
+            </div>
+            <div>
+              <img src="../img/Rendered_Md.png" alt="An example of what the rendered Markdown file would look like">
+              <sub>
+              What the rendered Markdown file should look like.
+              </sub>
+            </div>
           </div>
           <h3>Conclusion</h3>
           <div id="paragraph">
             <p>
-              
+              While the project was a failure at the very last step, I have a better understanding of how I can manage a portfolio
+              after graduation. Also, having the knowledge of how modern frontend frameworks work is very valuable information to have.
+              In the future, I will be using GitHub Pages to deploy my portfolio if I have no money to run use a service for it.
+              Luckily the project wasn't for naught.
             </p>
           </div>
         </div>
@@ -123,3 +185,13 @@
     </footer>
   </body>
 </html>
+
+<style>
+  h3{
+    padding: 0.5rem 0;
+  }
+
+  br{
+    padding: 0.5rem 0;
+  }
+</style>
