@@ -39,6 +39,34 @@
           <button class="carousel-btn next" data-carousel-button="next"><i class="fa-solid fa-arrow-right"></i></button>
           <ul data-slides>
             <li id="project" data-active>
+              <h3 class="font-bold text-xl" id="list-item-title">My neighbour Tololol</h3>
+              <div id="link-container">
+                <a
+                  href="../projects/GameJam_FGJ_2026.html"
+                  ><img src="../img/tolol_background.png" alt="Green Room" class="rounded-xl border-2"></a
+                >
+              </div>
+            </li>
+            <li id="project">
+              <h3 class="font-bold text-xl" id="list-item-title">Hardware Tinkering</h3>
+              <p id="summary">Here you will find my hardware related projects</p>
+              <div id="link-container">
+                <a
+                  href="../projects/Hardware_projects.html" id="hw-icon"
+                  ><img src="../img/computer-desktop-repair-icon.png" alt="Green Room"></a
+                >
+              </div>
+            </li>
+            <li id="project">
+              <h3 class="font-bold text-xl" id="list-item-title">Clounds and Bones</h3>
+              <div id="link-container">
+                <a
+                  href="../projects/GameJam_XGJF_2025.html"
+                  ><img src="../img/cloundsbones_logo.png" alt="Green Room"></a
+                >
+              </div>
+            </li>
+            <li id="project">
               <h3 class="font-bold text-xl" id="list-item-title">La Habitación Verde</h3>
               <div id="link-container">
                 <a
@@ -357,6 +385,10 @@
     height: 100%;
   }
 
+  #link-container #hw-icon{
+    width: 250px;
+  }
+
   #link-container #img-container{
     display: flex;
     flex-direction: column;
@@ -448,6 +480,10 @@
 
     #link-container img{
       width: 280px;
+    }
+
+    #link-container #hw-icon{
+      width: 150px;
     }
   }
 </style>

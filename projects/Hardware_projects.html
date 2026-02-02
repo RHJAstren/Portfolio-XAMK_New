@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../css/style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+      integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <title>Hardware projects</title>
+  </head>
+  <body>
+    <main>
+      <div id="top-header">
+        <div>
+          <a href="../index.html" class="text-3xl rounded-xl border-3"> RA </a>
+        </div>
+        <div id="title">
+          <h1 class="text-3xl lg:text-5xl font-bold">Hardware projects</h1>
+          <sub id="sub-name" class="lg:text-xl">--- Personal projects ---</sub>
+        </div>
+      </div>
+      <div id="report">
+        <div id="simple-info">
+          <div>
+            <div id="img-container">
+              <img src="../img/computer-desktop-repair-icon.png" alt="Icon for computer repair">
+            </div>
+          </div>
+          <div id="list">
+            <h3>Events</h3>
+            <ul>
+              <li>
+                Games CO-OP
+              </li>
+              <li>
+                itFetchQuest()
+              </li>
+              <li>
+                LANs
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div id="report-summary">
+          <h3>Event Summaries</h3>
+          <ul id="events-container">
+            <li id="event">
+              <h4>Bluetooth Speaker</h4>
+              <div id="paragraph">
+                <p></p>
+              </div>
+              <div>
+                <div id="img-container">
+                  <img src="" alt="">
+                </div>
+              </div>
+            </li>
+            <li id="event">
+              <h4>VPN w/ Raspberry Pi</h4>
+              <div id="paragraph">
+                <p></p>
+              </div>
+              <div id="img-container">
+                <img src="" alt="">
+              </div>
+            </li>
+            <li id="event">
+              <h4>Arduino alarm clock</h4>
+              <div id="paragraph">
+                <p>
+                
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="move">
+        <a
+          href="../html/hub.html"
+          class="rounded-xl border-3 text-xl lg:text-3xl font-bold"
+        >
+          <i class="fa-solid fa-arrow-left"></i>
+        </a>
+      </div>
+    </main>
+    <footer
+      id="contact"
+      class="flex flex-col gap-5 lg:flex-row lg:gap-15 justify-center"
+    >
+      <div id="links" class="flex flex-row gap-5 justify-center">
+        <div>
+          <a
+            href="https://www.linkedin.com/in/roope-astren/"
+            target="_blank"
+            class="text-5xl"
+          >
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+        </div>
+        <div>
+          <a
+            href="https://github.com/astroxamk"
+            target="_blank"
+            class="text-5xl"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </div>
+        <div>
+          <a
+            href="https://www.instagram.com/rhj.astren/"
+            target="_blank"
+            class="text-5xl"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+      <div class="lg:text-xl">
+        <ul>
+          <li>Location: Kotka, Finland</li>
+          <li>Education: XAMK - Game Programming</li>
+          <li>E-mail: roope.astren@gmail.com</li>
+        </ul>
+      </div>
+      <div class="lg:text-xl">&copy Roope Astrén</div>
+    </footer>
+  </body>
+</html>
+
+<style>
+  #list h3{
+    font-size: 2rem;
+  }
+
+  #list li{
+    font-size: 1.2rem;
+  }
+
+  #simple-info #img-container img{
+    max-width: 100%;
+  }
+
+  #events-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #event h4{
+    font-weight: 600;
+    font-size: 1.35rem;
+  }
+
+  #event{
+    border: 1px solid var(--color-text-white);
+    border-radius: 0.75rem;
+    margin: 1rem .25rem auto;
+    background-color: var(--color-bg);
+  }
+  
+  #paragraph p{
+    margin: auto .35rem;
+  }
+
+  #img-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(0px);
+  }
+
+  #img-container img{
+    margin: auto .5rem ;
+    max-width: 65%;
+    width: 100%;
+  }
+
+  @media screen and (max-width: 600px){
+    #events-container{
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
