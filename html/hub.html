@@ -58,11 +58,29 @@
               </div>
             </li>
             <li id="project">
+              <h3 class="font-bold text-xl" id="list-item-title">Drive to Work</h3>
+              <div id="link-container">
+                <a
+                  href="../projects/Project_DTW.html"
+                  ><img src="../img/Placeholder.png" alt="Drive to work"></a
+                >
+              </div>
+            </li>
+            <li id="project">
               <h3 class="font-bold text-xl" id="list-item-title">Clounds and Bones</h3>
               <div id="link-container">
                 <a
                   href="../projects/GameJam_XGJF_2025.html"
-                  ><img src="../img/cloundsbones_logo.png" alt="Green Room"></a
+                  ><img src="../img/cloundsbones_logo.png" alt="Clounds and bones"></a
+                >
+              </div>
+            </li>
+            <li id="project">
+              <h3 class="font-bold text-xl" id="list-item-title">Docker MOOC</h3>
+              <div id="link-container">
+                <a
+                  href="../projects/Course_Docker.html"
+                  ><img src="../img/Placeholder.png" alt="Docker"></a
                 >
               </div>
             </li>
@@ -147,23 +165,23 @@
           <button class="carousel-btn prev" data-carousel-button="prev"><i class="fa-solid fa-arrow-left"></i></button>
           <button class="carousel-btn next" data-carousel-button="next"><i class="fa-solid fa-arrow-right"></i></button>
           <ul data-slides>
-            <!-- <li id="achievement">
+            <li id="achievement" data-active>
               <h3 class="font-bold text-xl" id="list-item-title">GoodGames Kotka</h3>
               <p id="summary">
-                A student organization that I am in charge of establishing with a few of my fellow students.
+                A student organization that I was in charge of establishing with a few of my fellow students.
               </p>
               <div id="link-container">
                 <a
                   href="../Achievements/GGK_organization.html"
                   >
-                  <div id="img-container">
-                    <img src="../img/" alt="GGK logo pending" class="rounded-xl border-2">
+                  <div id="logo-container">
+                    <img src="../img/GGK_Logo.png" alt="GGK logo pending">
                   </div>
                   </a
                 >
               </div>
-            </li> -->
-            <li id="achievement" data-active>
+            </li>
+            <li id="achievement">
               <h3 class="font-bold text-xl" id="list-item-title">Event Organizing</h3>
               <div id="link-container">
                 <a
@@ -180,7 +198,7 @@
             <li id="achievement">
               <h3 class="font-bold text-xl" id="list-item-title">Elements of AI</h3>
               <div id="link-container">
-                <img src="../img/certificate-elements-of-ai.png" alt="Aerocore" class="rounded-xl border-2">
+                <img src="../img/certificate-elements-of-ai.png" alt="Elements of AI" class="rounded-xl border-2">
               </div>
             </li>
             <li id="achievement">
@@ -456,7 +474,11 @@
   #certificate-fcc > a{
     font-size: 5rem;
   }
-  
+
+  #logo-container > img{
+    height: clamp(200px, 250px, 400px);
+  }
+
   #icon-link{
     margin: 2.5rem 0;
     font-size: 2rem;
