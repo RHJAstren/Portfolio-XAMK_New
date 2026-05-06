@@ -32,6 +32,21 @@
           attained over the course of my life.
         </p>
       </div>
+      <!-- <h2>Virtual Production</h2>
+      <section id="VP">
+        <div class="carousel" data-carousel>
+          <ul data-slides>
+            <li id="project" data-active>
+              <h3 class="font-bold text-xl" id="list-item-title">Moovi Project</h3>
+              <div id="link-container">
+                <a href="../VP/Moovi_project.html">
+                  <img src="../img/Placeholder.png" alt="Gif of the production" class="rounded-xl border-2"w2>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section> -->
       <h2>Projects</h2>
       <section id="projects">
         <div class="carousel" data-carousel>
@@ -62,7 +77,7 @@
               <div id="link-container">
                 <a
                   href="../projects/Project_DTW.html"
-                  ><img src="../img/Placeholder.png" alt="Drive to work"></a
+                  ><img src="../img/comic_man.jpg" alt="Drive to work" class="rounded-xl border-2"></a
                 >
               </div>
             </li>
@@ -79,8 +94,8 @@
               <h3 class="font-bold text-xl" id="list-item-title">Docker MOOC</h3>
               <div id="link-container">
                 <a
-                  href="../projects/Course_Docker.html"
-                  ><img src="../img/Placeholder.png" alt="Docker"></a
+                  href="../projects/AbsoluteAss_Docker.html"
+                  ><img src="../img/Docker.png" alt="Docker"></a
                 >
               </div>
             </li>
@@ -111,7 +126,7 @@
                 >
               </div>
             </li>
-            <li id="project">
+            <!-- <li id="project">
               <h3 class="font-bold text-xl" id="list-item-title">Socket Horror</h3>
               <div id="link-container">
                 <a
@@ -137,7 +152,7 @@
                   ><img src="../img/Piiska_logo.png" alt="Aerocore" class="rounded-xl border-2"></a
                 >
               </div>
-            </li>
+            </li> -->
             <li id="project">
               <h3 class="font-bold text-xl" id="list-item-title">Astro.js Portfolio</h3>
               <div id="link-container">
@@ -175,7 +190,7 @@
                   href="../Achievements/GGK_organization.html"
                   >
                   <div id="logo-container">
-                    <img src="../img/GGK_Logo.png" alt="GGK logo pending">
+                    <img src="../img/GGK_Logo.png" alt="GGK logo pending" id="">
                   </div>
                   </a
                 >
@@ -187,10 +202,7 @@
                 <a
                   href="../Achievements/event_organizing.html"
                   >
-                  <div id="img-container">
-                    <img src="../img/GC_Banner_Teams.png" alt="Games Co-op" class="rounded-xl border-2">
-                    <img src="../img/Banner_games_coop.png" alt="Games Co-op 2" class="rounded-xl border-2">
-                  </div>
+                    <img src="../img/Event-management-Concept.-The_jpg.png" alt="Bruh" class="rounded-xl border-2">
                   </a
                 >
               </div>
@@ -207,7 +219,7 @@
                 The Scrum master handles the scrum meetings and keeps the 
                 project workers on their feet about the project.
               </p>
-              <div id="link-container">
+              <div id="logo-container">
                 <div id="certificate-csm">
                   <img src="../img/seal-csm.png" alt="Scrum Master Certificate">
                 </div>
@@ -338,7 +350,7 @@
     margin: 0 7vw;
   }
   
-  #projects, #achievements{
+  #projects, #achievements, #VP{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -508,7 +520,7 @@
   }
 
   @media screen and (max-width: 420px){
-    #certificate-csm > img{
+    #certificate-csm{
       max-width: 100px;
     }
 
@@ -517,11 +529,17 @@
     }
 
     #link-container img{
-      width: 280px;
+      height: clamp(75px, 150px, 200px);
+      width: auto;
     }
 
     #link-container #hw-icon{
       width: 150px;
+    }
+
+    #logo-container > img{
+      height: clamp(50px, 75px, 100px);
+      width: auto;
     }
   }
 </style>
